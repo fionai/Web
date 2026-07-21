@@ -22,3 +22,16 @@ figcaption
 {
 	font-style:italic;
 }
+/*-------------------------------------*/
+ol
+{
+	list-style:upper-roman;
+}
+ol ol
+{
+	list-style:decimal;
+}
+ol ul
+{
+	list-style:none;
+}

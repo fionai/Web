@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Списки</title>
+    <style>
+        ul{
+           /* list-style:none;*/
+            /*list-style:circle url("sq.png") inside;*/
+            /*list-style-image:url(sq.png);
+            list-style-position:inside;*/
+        }
+        li.first::before
+        {
+            display:inline-block;
+            
+            background-image: url('sq.png');
+        }
+        li
+        {
+            background-size:32px;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt><code>&lt;ul&gt;</code>(Unordered List) &#8213; </dt>
+        <dd>Маркированрный список;</dd>
+        <dt><code>&lt;ol&gt;</code>(Ordered List) &#8213; </dt>
+        <dd>Нумерованный список;</dd>
+        <dt><code>&lt;dl&gt;</code>(Definitions List) &#8213; </dt>
+        <dd>Список определений;</dd>
+    </dl>
+
+    <code>&lt;li&gt;</code>(List Item) &#8213;Элемент списка;
+    <code>&lt;dt&gt;</code>(Description Term) &#8213;Понятие;
+    <code>&lt;dd&gt;</code>(Description Details) &#8213;Определение;
+
+    <h1>Списки</h1>
+    <h2>Маркированный список</h2>
+    <ul>
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+        <li>Элемент 3</li>
+        <li>Элемент 4</li>
+        <li>Элемент 5</li>
+    </ul>
+    <ol start="10">
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+        <li>Элемент 3</li>
+        <li>Элемент 4</li>
+        <li>Элемент 5</li>
+    </ol>
+</body>
+</html>
